@@ -1,11 +1,13 @@
-import test, { expect } from "playwright/test";
+import test, { devices, expect } from "playwright/test";
+
+test.use({ ...devices['Galaxy Tab S4'] });
 
 test.describe('Visual Regression', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://commitquality.com/');
     })
 
-    test("Take snapshot", async ({ page }) => {
+    test.only("Take snapshot", async ({ page }) => {
         // await SharedController.visualRegression("take_snapshot.png");
         expect(await page.screenshot()).toMatchSnapshot("take_snapshot.png");
     })

@@ -16,5 +16,29 @@ test.describe('Accessibility Test', () => {
         });
         
         expect(results.violations.length).toEqual(0);
-    })    
+    })
+    
+    test('Check Accessibility on Element', async ({ page }) => {
+        const results = await new AxeBuilder({ page })
+        .include('.back-link')
+        .analyze();
+
+        expect(results.violations).toEqual([]);
+    })
+
+    test('Check Accessibility exclude Element', async ({ page }) => {
+        const results = await new AxeBuilder({ page })
+        .exclude('.back-link')
+        .analyze();
+
+        expect(results.violations).toEqual([]);
+    })
+
+    test('Check Accessibility with tags', async ({ page }) => {
+        const results = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
+        .analyze();
+
+        expect(results.violations).toEqual([]);
+    })
 })
