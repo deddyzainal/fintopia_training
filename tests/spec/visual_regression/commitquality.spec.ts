@@ -7,7 +7,7 @@ test.describe('Visual Regression', () => {
         await page.goto('https://commitquality.com/');
     })
 
-    test.only("Take snapshot", async ({ page }) => {
+    test("Take snapshot", async ({ page }) => {
         // await SharedController.visualRegression("take_snapshot.png");
         expect(await page.screenshot()).toMatchSnapshot("take_snapshot.png");
     })
@@ -62,7 +62,7 @@ test.describe('Visual Regression', () => {
         await expect(ELEMENT).toHaveScreenshot("take_table_screenshot.png");
     })
 
-    test.only("Take small difference screenshot", async ({ page }) => {
+    test("Take small difference screenshot", async ({ page }) => {
         // await SharedController.modifyVisualRegression({
         //     fileName: "take_small_difference_screenshot.png",
         //     options: {
