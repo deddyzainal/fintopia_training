@@ -22,9 +22,9 @@ pipeline {
             }
         }
 
-        stage('Run Playwright Tests transaction') {
+        stage('Run Playwright Tests') {
             steps {
-                sh 'npx playwright test login'
+                sh 'npx playwright test tests/spec/login.sanity.spec.ts'
             }
         }
     }
