@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 04 15:25:46 WIB 2025","Fri Jul 04 15:25:47 WIB 2025","1008","chromium","spec/login.sanity.spec.ts","Login","","","login with valid credentials",""
+"passed","Fri Jul 04 15:25:46 WIB 2025","Fri Jul 04 15:25:47 WIB 2025","901","chromium","spec/login.sanity.spec.ts","Login","","","login with empty password",""
+"passed","Fri Jul 04 15:29:39 WIB 2025","Fri Jul 04 15:29:40 WIB 2025","722","chromium","spec/login.spec.ts","","","","login with valid credentials",""
+"passed","Fri Jul 04 15:25:48 WIB 2025","Fri Jul 04 15:25:48 WIB 2025","470","chromium","spec/login.sanity.spec.ts","Login","","","login with empty username and password",""
+"passed","Fri Jul 04 15:25:46 WIB 2025","Fri Jul 04 15:25:47 WIB 2025","897","chromium","spec/login.sanity.spec.ts","Login","","","login with empty username",""
+"passed","Fri Jul 04 15:25:46 WIB 2025","Fri Jul 04 15:25:47 WIB 2025","926","chromium","spec/login.sanity.spec.ts","Login","","","login with random username",""
+"passed","Fri Jul 04 15:25:46 WIB 2025","Fri Jul 04 15:25:47 WIB 2025","932","chromium","spec/login.sanity.spec.ts","Login","","","login with random password",""
