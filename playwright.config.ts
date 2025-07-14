@@ -13,7 +13,7 @@ import { on } from 'events';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  snapshotPathTemplate: 'snapshots/{testFileDir}/{testFileName}-snapshots/{arg}-{deviceName}{ext}',
+  snapshotPathTemplate: 'snapshots/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}{ext}',
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
